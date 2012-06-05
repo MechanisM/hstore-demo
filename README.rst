@@ -3,12 +3,13 @@ Schemaless SQL
 ==============
 
 * Lightning talk given at DjangoCon.EU 2012
-* 
+* http://bit.ly/django-hstore
+
 
 Setup
 =====
 
-.. code-block:: bash
+::
 
     git clone https://github.com/craigkerstiens/hstore-demo.git
     heroku create -s cedar
@@ -20,13 +21,13 @@ Setup
 Then connect to your database with 'heroku pg:psql' and create the hstore
 extension
 
-.. code-block:: sql
+::
     
     create extension hstore;
 
 Finally sync your database
 
-.. bash::
+::
 
     heroku run python manage.py syncdb
 
@@ -34,7 +35,7 @@ Finally sync your database
 Example Uses
 ============
 
-.. code-block:: python
+::
 
     from app.models import *
     django_pony = Product.objects.create(name='Django Pony', data={'rating': '5'})
