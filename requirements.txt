@@ -1,0 +1,6 @@
+Django==1.4
+django-extensions==0.8
+git+git://github.com/jordanm/django-hstore.git
+ipython==0.12.1
+psycopg2==2.4.5
+wsgiref==0.1.2
